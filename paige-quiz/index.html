@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paige's Anime Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Paige's Quiz</h1>
+        <h2 class="subtitle">
+            Select each of the shows/seasons you have watched:
+        </h2>
+    </header>
+    <main>
+        <div class="show-list">
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Attack on Titan</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Attack on Titan" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Death Note</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/9/9453.jpg" alt="Death Note" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Fullmetal Alchemist: Brotherhood</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1208/94745.jpg" alt="Fullmetal Alchemist: Brotherhood" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">One Punch Man</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/12/76049.jpg" alt="One Punch Man" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Sword Art Online</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/11/39717.jpg" alt="Sword Art Online" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">My Hero Academia</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/10/78745.jpg" alt="My Hero Academia" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Demon Slayer: Kimetsu no Yaiba</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer: Kimetsu no Yaiba" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Naruto</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/13/17405.jpg" alt="Naruto" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Tokyo Ghoul</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1498/134443.jpg" alt="Tokyo Ghoul" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Hunter x Hunter</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1337/99013.jpg" alt="Hunter x Hunter" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Your Name.</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/5/87048.jpg" alt="Your Name." loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Attack on Titan Season 2</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/4/84177.jpg" alt="Attack on Titan Season 2" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Steins;Gate</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1935/127974.jpg" alt="Steins;Gate" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">My Hero Academia Season 2</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/12/85221.jpg" alt="My Hero Academia Season 2" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Naruto Shippuden</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1565/111305.jpg" alt="Naruto Shippuden" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">No Game, No Life</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1074/111944.jpg" alt="No Game, No Life" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Jujutsu Kaisen</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg" alt="Jujutsu Kaisen" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Attack on Titan Season 3</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1173/92110.jpg" alt="Attack on Titan Season 3" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">A Silent Voice</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1122/96435.jpg" alt="A Silent Voice" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">One Piece</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/6/73245.jpg" alt="One Piece" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Code Geass: Lelouch of the Rebellion</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1032/135088.jpg" alt="Code Geass: Lelouch of the Rebellion" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Toradora!</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/13/22128.jpg" alt="Toradora!" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Your Lie in April</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/3/67177.jpg" alt="Your Lie in April" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Attack on Titan Season 3 Part 2</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1517/100633.jpg" alt="Attack on Titan Season 3 Part 2" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Re:ZERO -Starting Life in Another World-</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1522/128039.jpg" alt="Re:ZERO -Starting Life in Another World-" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">My Hero Academia Season 3</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1319/92084.jpg" alt="My Hero Academia Season 3" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Noragami</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1886/128266.jpg" alt="Noragami" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Angel Beats!</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1244/111115.jpg" alt="Angel Beats!" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Akame ga Kill!</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1429/95946.jpg" alt="Akame ga Kill!" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">ERASED</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/10/77957.jpg" alt="ERASED" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">The Seven Deadly Sins</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/8/65409.jpg" alt="The Seven Deadly Sins" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Mob Psycho 100</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/8/80356.jpg" alt="Mob Psycho 100" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">The Future Diary</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/13/33465.jpg" alt="The Future Diary" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Assassination Classroom</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/5/75639.jpg" alt="Assassination Classroom" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Sword Art Online II</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1223/121999.jpg" alt="Sword Art Online II" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Haikyu!!</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/7/76014.jpg" alt="Haikyu!!" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">The Promised Neverland</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1830/118780.jpg" alt="The Promised Neverland" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">KonoSuba: God's Blessing on This Wonderful World!</h3>    
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/8/77831.jpg" alt="KonoSuba: God's Blessing on This Wonderful World!" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Bleach</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/3/40451.jpg" alt="Bleach" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Blue Exorcist</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/10/75195.jpg" alt="Blue Exorcist" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Attack on Titan: Final Season</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1000/110531.jpg" alt="Attack on Titan: Final Season" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Parasyte: The Maxim</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/3/73178.jpg" alt="Parasyte: The Maxim" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Cowboy Bebop</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/4/19644.jpg" alt="Cowboy Bebop" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Spirited Away</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/6/79597.jpg" alt="Spirited Away" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Neon Genesis Evangelion</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1314/108941.jpg" alt="Neon Genesis Evangelion" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Tokyo Ghoul √A</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1889/123307.jpg" alt="Tokyo Ghoul √A" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Code Geass: Lelouch of the Rebellion R2</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1088/135089.jpg" alt="Code Geass: Lelouch of the Rebellion R2" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Death Parade</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/5/71553.jpg" alt="Death Parade" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Fairy Tail</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/5/18179.jpg" alt="Fairy Tail" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Violet Evergarden</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1795/95088.jpg" alt="Violet Evergarden" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Kill la Kill</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1464/111943.jpg" alt="Kill la Kill" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Rascal Does Not Dream of Bunny Girl Senpai</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1301/93586.jpg" alt="Rascal Does Not Dream of Bunny Girl Senpai" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">My Hero Academia Season 4</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1412/107914.jpg" alt="My Hero Academia Season 4" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Kaguya-sama: Love is War</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1295/106551.jpg" alt="Kaguya-sama: Love is War" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Dr. Stone</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1613/102576.jpg" alt="Dr. Stone" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Another</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/4/75509.jpg" alt="Another" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">One Punch Man Season 2</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1247/122044.jpg" alt="One Punch Man Season 2" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Food Wars! Shokugeki no Soma</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/3/72943.jpg" alt="Food Wars! Shokugeki no Soma" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">JoJo's Bizarre Adventure (2012)</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/3/40409.jpg" alt="JoJo's Bizarre Adventure (2012)" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Psycho-Pass</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/5/43399.jpg" alt="Psycho-Pass" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">DARLING in the FRANXX</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1614/90408.jpg" alt="DARLING in the FRANXX" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Soul Eater</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/9/7804.jpg" alt="Soul Eater" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Anohana: The Flower We Saw That Day</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/5/79697.jpg" alt="Anohana: The Flower We Saw That Day" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Gurren Lagann</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/4/5123.jpg" alt="Gurren Lagann" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Black Clover</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/2/88336.jpg" alt="Black Clover" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Charlotte</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/12/74683.jpg" alt="Charlotte" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Overlord</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/7/88019.jpg" alt="Overlord" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">The Devil is a Part-Timer!</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/3/50177.jpg" alt="The Devil is a Part-Timer!" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">The Rising of the Shield Hero</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1490/101365.jpg" alt="The Rising of the Shield Hero" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Is It Wrong to Try to Pick Up Girls in a Dungeon?</h3>    
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/2/70187.jpg" alt="Is It Wrong to Try to Pick Up Girls in a Dungeon?" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Elfen Lied</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1780/121555.jpg" alt="Elfen Lied" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">High School of the Dead</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/11/78311.jpg" alt="High School of the Dead" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Fate/Zero</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1887/117644.jpg" alt="Fate/Zero" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">KonoSuba: God's Blessing on This Wonderful World! 2</h3>  
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/2/83188.jpg" alt="KonoSuba: God's Blessing on This Wonderful World! 2" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Mob Psycho 100 II</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1918/96303.jpg" alt="Mob Psycho 100 II" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Fullmetal Alchemist</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/10/75815.jpg" alt="Fullmetal Alchemist" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Kakegurui</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/3/86578.jpg" alt="Kakegurui" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Noragami Aragoto</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1689/94850.jpg" alt="Noragami Aragoto" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1704/106947.jpg" alt="Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train" loading="lazy"/>  
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Clannad</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1804/95033.jpg" alt="Clannad" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">High School DxD</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1331/111940.jpg" alt="High School DxD" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">My Teen Romantic Comedy SNAFU</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1786/120117.jpg" alt="My Teen Romantic Comedy SNAFU" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Durarara!!</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/10/71772.jpg" alt="Durarara!!" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Haikyu!! 2nd Season</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/9/76662.jpg" alt="Haikyu!! 2nd Season" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Assassination Classroom Second Season</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/8/77966.jpg" alt="Assassination Classroom Second Season" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Bakemonogatari</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/11/75274.jpg" alt="Bakemonogatari" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Vinland Saga</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1500/103005.jpg" alt="Vinland Saga" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Spy x Family</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1441/122795.jpg" alt="Spy x Family" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">That Time I Got Reincarnated as a Slime</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1069/123309.jpg" alt="That Time I Got Reincarnated as a Slime" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Hyouka</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/13/50521.jpg" alt="Hyouka" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Love, Chunibyo & Other Delusions!</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/12/46931.jpg" alt="Love, Chunibyo & Other Delusions!" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Bungo Stray Dogs</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/3/79409.jpg" alt="Bungo Stray Dogs" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Made in Abyss</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/6/86733.jpg" alt="Made in Abyss" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Seraph of the End: Vampire Reign</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/5/73474.jpg" alt="Seraph of the End: Vampire Reign" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Chainsaw Man</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1806/126216.jpg" alt="Chainsaw Man" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Kaguya-sama: Love is War Season 2</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1764/106659.jpg" alt="Kaguya-sama: Love is War Season 2" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Howl's Moving Castle</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/5/75810.jpg" alt="Howl's Moving Castle" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Fire Force</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1664/103275.jpg" alt="Fire Force" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Horimiya</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1695/111486.jpg" alt="Horimiya" loading="lazy"/>
+            </div>
+            <div class="show-entry" data-selected="false">
+                <h3 class="show-title">Demon Slayer: Kimetsu no Yaiba Entertainment District Arc</h3>
+                <img class="show-icon" src="https://cdn.myanimelist.net/images/anime/1908/120036.jpg" alt="Demon Slayer: Kimetsu no Yaiba Entertainment District Arc" loading="lazy"/>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2 class="score">
+            Your Score:
+            <span class="score-display accent">100</span>
+        </h2>
+    </footer>
+</body>
+</html>
